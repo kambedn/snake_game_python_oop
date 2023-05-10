@@ -8,7 +8,7 @@ screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("The Snake Game")
-screen.tracer(0)  # turning turtles animation off
+screen.tracer(0)  # turning turtles' animations off
 
 snake = Snake()
 food = Food()
@@ -23,7 +23,7 @@ screen.onkey(snake.move_right, "Right")
 game_is_on = True
 while game_is_on:
     screen.update()  # refreshing the screen
-    time.sleep(0.1)
+    time.sleep(0.1)  
     snake.move()
 
     # detect collision with food
